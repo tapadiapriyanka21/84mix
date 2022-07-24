@@ -29,40 +29,39 @@ function my_keydown(e)
 	keyPressed = e.keyCode;
 	console.log(keyPressed);
 	
-		if((keyPressed >=97 && keyPressed<=122)|| (keyPressed >=65 && keyPressed<=90))
-		//write a code to check the type of key pressed
-	else{
+		if((keyPressed >=97 && keyPressed<=122)|| (keyPressed >=65 && keyPressed<=90))	
+			//write a code to check the type of key pressed
+	{
 		aplhabetkey();
 		document.getElementById("d1").innerHTML="You pressed Alphabet key";
 		console.log(keyPressed);
 	}
-	if((keyPressed >=48 && keyPressed<=57))
+	else if((keyPressed >=48 && keyPressed<=57))
 		//write a code to check the type of key pressed
-	else{
+	{
 		numberkey();
 		document.getElementById("d1").innerHTML="You pressed Number key";
 		console.log(keyPressed);
 	}
-	if((keyPressed >=37 && keyPressed<=40))
+	else if((keyPressed >=37 && keyPressed<=40))
 		//write a code to check the type of key pressed
-	else{
-		arrowkey();
+	{	arrowkey();
 		document.getElementById("d1").innerHTML="You pressed Arrow key";
 		console.log(keyPressed);
 	}
-	if((keyPressed >=17 && keyPressed<=18)|| (keyPressed >=27 ))
+	else if((keyPressed >=17 && keyPressed<=18)|| (keyPressed >=27 ))
 		//write a code to check the type of key pressed
-	else{
+	{
 		specialkey();
 		document.getElementById("d1").innerHTML="You pressed Special key";
 		console.log(keyPressed);
 	}
-	if((keyPressed Symbol))
+	else()
 		//write a code to check the type of key pressed
-	else{
+	{
 		otherkey();
 		document.getElementById("d1").innerHTML="You pressed symbol or Other key";
-		console.log(keyPressed);
+// 		console.log(keyPressed);
 	}
 }
 
